@@ -1,15 +1,15 @@
 export class RoutingService {
     constructor() {}
     async navigateToLocation(locationArray = [], appName) {
-        const DIAGRAM_GENERATOR = "diagram-generator";
+        const AUDIO_CREATOR = "audio-creator";
 
-       if (locationArray.length === 0 || locationArray[0] === DIAGRAM_GENERATOR) {
-            const pageUrl = `${assistOS.space.id}/${appName}/${DIAGRAM_GENERATOR}`;
-            await assistOS.UI.changeToDynamicPage(DIAGRAM_GENERATOR, pageUrl);
+       if (locationArray.length === 0 || locationArray[0] === AUDIO_CREATOR) {
+            const pageUrl = `${assistOS.space.id}/${appName}/${AUDIO_CREATOR}`;
+            await assistOS.UI.changeToDynamicPage(AUDIO_CREATOR, pageUrl);
             return;
         }
-         if(locationArray[locationArray.length-1]!== DIAGRAM_GENERATOR){
-         console.error(`Invalid URL: URL must end with ${DIAGRAM_GENERATOR}`);
+         if(locationArray[locationArray.length-1]!== AUDIO_CREATOR){
+         console.error(`Invalid URL: URL must end with ${AUDIO_CREATOR}`);
             return;
         }
         const webComponentName = locationArray[locationArray.length - 1];
