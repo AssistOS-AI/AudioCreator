@@ -24,12 +24,6 @@
   "plugins": {
     "abstract": [],
     "paragraph": [
-      {
-        "name": "Audio Creator",
-        "componentName": "audio-creator",
-        "icon": "/assets/icons/audio.svg",
-        "presenterClassName": "AudioCreator"
-      }
     ]
   }
 }
